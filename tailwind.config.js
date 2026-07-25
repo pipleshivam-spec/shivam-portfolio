@@ -1,0 +1,98 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'on-primary-fixed-variant': '#004493',
+        'surface-container-low': '#1c1b1b',
+        'surface-container-highest': '#353534',
+        'primary-container': 'var(--accent-color)',
+        // primary is wired to the CSS custom property so the theme switcher works everywhere
+        'primary': 'var(--accent-color)',
+        'on-primary': '#ffffff',
+        'surface-container-high': '#2a2a2a',
+        'on-tertiary': '#2f3131',
+        'on-surface': '#e5e2e1',
+        'on-error': '#690005',
+        'primary-fixed-dim': 'var(--accent-color)',
+        'on-secondary': '#313030',
+        'secondary-fixed-dim': '#c8c6c5',
+        'surface-tint': 'var(--accent-color)',
+        'primary-fixed': 'var(--accent-color)',
+        'inverse-primary': 'var(--accent-color)',
+        'on-tertiary-fixed': '#1a1c1c',
+        'tertiary-container': '#909191',
+        'tertiary-fixed-dim': '#c6c6c7',
+        'surface-container-lowest': '#0e0e0e',
+        'on-surface-variant': '#c1c6d7',
+        'outline': '#8b90a0',
+        'on-tertiary-container': '#282a2a',
+        'on-secondary-fixed-variant': '#474646',
+        'error': '#ffb4ab',
+        'secondary': '#c8c6c5',
+        'surface': '#131313',
+        'on-secondary-container': '#bab8b7',
+        'on-secondary-fixed': '#1c1b1b',
+        'surface-dim': '#131313',
+        'tertiary-fixed': '#e2e2e2',
+        'surface-container': '#201f1f',
+        'on-primary-fixed': '#ffffff',
+        'tertiary': '#c6c6c7',
+        'inverse-surface': '#e5e2e1',
+        'error-container': '#93000a',
+        'on-background': '#e5e2e1',
+        'outline-variant': '#414755',
+        'on-primary-container': '#ffffff',
+        'surface-variant': '#353534',
+        'on-error-container': '#ffdad6',
+        'on-tertiary-fixed-variant': '#454747',
+        'secondary-fixed': '#e5e2e1',
+        'inverse-on-surface': '#313030',
+        'surface-bright': '#3a3939',
+        'secondary-container': '#4a4949',
+        'background': '#131313',
+        'electric-blue': 'var(--accent-color)'
+      },
+      borderRadius: {
+        'DEFAULT': '0.125rem',
+        'lg': '0.25rem',
+        'xl': '0.5rem',
+        'full': '0.75rem'
+      },
+      spacing: {
+        'gutter': '24px',
+        'margin-mobile': '20px',
+        'section-gap-mobile': '64px',
+        'section-gap-desktop': '120px',
+        'unit': '8px',
+        'container-max': '1200px'
+      },
+      fontFamily: {
+        'body-md': ['Inter', 'sans-serif'],
+        'headline-xl': ['Space Grotesk', 'sans-serif'],
+        'headline-lg': ['Space Grotesk', 'sans-serif'],
+        'display-lg-mobile': ['Space Grotesk', 'sans-serif'],
+        'label-mono': ['Geist Mono', 'monospace'],
+        'display-lg': ['Space Grotesk', 'sans-serif'],
+        'body-lg': ['Inter', 'sans-serif'],
+        'sans': ['Inter', 'sans-serif'],
+        'mono': ['Geist Mono', 'monospace']
+      },
+      fontSize: {
+        'body-md': ['16px', { lineHeight: '1.6', fontWeight: '400' }],
+        'headline-xl': ['48px', { lineHeight: '1.2', fontWeight: '600' }],
+        'headline-lg': ['32px', { lineHeight: '1.3', fontWeight: '500' }],
+        'display-lg-mobile': ['40px', { lineHeight: '1.2', letterSpacing: '-0.01em', fontWeight: '700' }],
+        'label-mono': ['14px', { lineHeight: '1.0', letterSpacing: '0.05em', fontWeight: '500' }],
+        'display-lg': ['72px', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'body-lg': ['18px', { lineHeight: '1.6', fontWeight: '400' }]
+      }
+    },
+  },
+  plugins: [],
+}

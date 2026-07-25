@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shivam Piple | AI &amp; Automation Specialist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#004493",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container-highest": "#353534",
+                    "primary-container": "#4b8eff",
+                    "primary": "#adc6ff",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary": "#2f3131",
+                    "on-surface": "#e5e2e1",
+                    "on-error": "#690005",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-secondary": "#313030",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-tint": "#adc6ff",
+                    "primary-fixed": "#d8e2ff",
+                    "on-primary": "#002e69",
+                    "inverse-primary": "#005bc1",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "tertiary-container": "#909191",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface-variant": "#c1c6d7",
+                    "outline": "#8b90a0",
+                    "on-tertiary-container": "#282a2a",
+                    "on-secondary-fixed-variant": "#474646",
+                    "error": "#ffb4ab",
+                    "secondary": "#c8c6c5",
+                    "surface": "#131313",
+                    "on-secondary-container": "#bab8b7",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "surface-dim": "#131313",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-container": "#201f1f",
+                    "on-primary-fixed": "#001a41",
+                    "tertiary": "#c6c6c7",
+                    "inverse-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-background": "#e5e2e1",
+                    "outline-variant": "#414755",
+                    "on-primary-container": "#00285c",
+                    "surface-variant": "#353534",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "secondary-fixed": "#e5e2e1",
+                    "inverse-on-surface": "#313030",
+                    "surface-bright": "#3a3939",
+                    "secondary-container": "#4a4949",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "section-gap-mobile": "64px",
+                    "section-gap-desktop": "120px",
+                    "unit": "8px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-xl": ["Space Grotesk"],
+                    "headline-lg": ["Space Grotesk"],
+                    "display-lg-mobile": ["Space Grotesk"],
+                    "label-mono": ["Geist Mono"],
+                    "display-lg": ["Space Grotesk"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-mono": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e5e2e1;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(18, 18, 18, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .electric-glow {
+            box-shadow: 0 0 15px rgba(0, 122, 255, 0.3);
+        }
+        .mono-divider {
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
+        }
+        /* Material Icon Sizing Override */
+        .material-symbols-outlined {
+            font-size: 20px;
+            vertical-align: middle;
+        }
+        /* Mobile Scroll Optimization */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-md border-b border-white/10">
+<div class="flex justify-between items-center h-20 px-margin-mobile">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tighter">S.P.</span>
+<div class="flex gap-4">
+<button class="bg-[#007AFF] text-white px-4 py-2 font-label-mono text-[12px] rounded-lg Active:scale-95 transition-transform uppercase tracking-wider">Hire Me</button>
+<button class="material-symbols-outlined text-on-surface-variant">menu</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col justify-center px-margin-mobile overflow-hidden">
+<!-- STITCH_SHADER_START:ANIMATION_2 class="absolute inset-0 w-full h-full opacity-40" -->
+<div class="absolute inset-0 w-full h-full opacity-40" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_2" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_2');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+float hash(vec2 p) {
+    p = fract(p * vec2(123.34, 456.21));
+    p += dot(p, p + 45.32);
+    return fract(p.x * p.y);
+}
+
+float line(vec2 p, vec2 a, vec2 b) {
+    vec2 pa = p - a;
+    vec2 ba = b - a;
+    float h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0);
+    return length(pa - ba * h);
+}
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 p = (uv - 0.5) * 2.0;
+    p.x *= u_resolution.x / u_resolution.y;
+    
+    // Background color (Deep Charcoal)
+    vec3 color = vec3(0.04, 0.04, 0.05);
+    
+    // Grid system
+    float gridSize = 8.0;
+    vec2 g_uv = uv * gridSize;
+    vec2 id = floor(g_uv);
+    vec2 f_uv = fract(g_uv) - 0.5;
+    
+    // Nodes and connections
+    for(float y = -1.0; y <= 1.0; y++) {
+        for(float x = -1.0; x <= 1.0; x++) {
+            vec2 offs = vec2(x, y);
+            vec2 currentId = id + offs;
+            
+            // Random movement for nodes
+            float n = hash(currentId);
+            vec2 pos = offs + vec2(sin(u_time * 0.5 + n * 6.28), cos(u_time * 0.5 + n * 6.28)) * 0.3;
+            
+            // Draw points
+            float dist = length(f_uv - pos);
+            float point = smoothstep(0.03, 0.02, dist);
+            color += point * vec3(0.0, 0.48, 1.0) * 0.5; // Accent Blue
+            
+            // Draw connections to neighbors
+            if(n > 0.5) {
+                vec2 neighborId = currentId + vec2(1.0, 0.0);
+                float n2 = hash(neighborId);
+                vec2 pos2 = vec2(1.0, 0.0) + vec2(sin(u_time * 0.5 + n2 * 6.28), cos(u_time * 0.5 + n2 * 6.28)) * 0.3;
+                float l = line(f_uv, pos, pos2);
+                color += smoothstep(0.015, 0.0, l) * vec3(0.0, 0.48, 1.0) * 0.1 * (0.5 + 0.5 * sin(u_time + n * 10.0));
+            }
+        }
+    }
+    
+    // Subtle vignette
+    color *= 1.0 - length(p) * 0.3;
+    
+    gl_FragColor = vec4(color, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_2 -->
+<div class="relative z-10 space-y-6">
+<div class="inline-block px-3 py-1 bg-surface-container-high border border-outline-variant/30 rounded-full">
+<span class="font-label-mono text-primary text-[12px] uppercase tracking-[0.1em]">Available for projects</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface leading-tight">
+                    Engineering <br/>
+<span class="text-primary italic">Autonomous</span> <br/>
+                    Futures.
+                </h1>
+<p class="font-body-md text-on-surface-variant max-w-[320px]">
+                    Shivam Piple — Specialist in AI Architecture and Workflow Automation. Building systems that think, learn, and scale.
+                </p>
+<div class="flex flex-col gap-4 pt-4">
+<a class="w-full bg-[#007AFF] text-white h-14 flex items-center justify-center font-label-mono uppercase tracking-widest rounded-lg shadow-lg electric-glow" href="#projects">
+                        View Projects
+                    </a>
+<a class="w-full border border-white/20 h-14 flex items-center justify-center font-label-mono uppercase tracking-widest rounded-lg backdrop-blur-sm" href="#contact">
+                        Get In Touch
+                    </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-margin-mobile flex items-center gap-3">
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase vertical-rl">Scroll</span>
+</div>
+</section>
+<!-- Metrics Bento (Stacked Mobile) -->
+<section class="py-section-gap-mobile px-margin-mobile">
+<div class="grid grid-cols-1 gap-4">
+<div class="glass-card p-6 flex flex-col justify-between h-40">
+<span class="font-label-mono text-primary text-xs uppercase">Completed Automations</span>
+<h3 class="font-headline-xl text-headline-xl">45+</h3>
+<div class="flex items-center gap-1 text-on-surface-variant text-[12px]">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>98% Efficiency Gain</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="glass-card p-6 aspect-square flex flex-col justify-between">
+<span class="font-label-mono text-primary text-[10px] uppercase">Experience</span>
+<h3 class="font-headline-lg text-headline-lg">04</h3>
+<span class="font-label-mono text-[10px] text-on-surface-variant">Years of AI Focus</span>
+</div>
+<div class="glass-card p-6 aspect-square flex flex-col justify-between">
+<span class="font-label-mono text-primary text-[10px] uppercase">Models</span>
+<h3 class="font-headline-lg text-headline-lg">12</h3>
+<span class="font-label-mono text-[10px] text-on-surface-variant">Custom LLM Deployments</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap-mobile px-margin-mobile bg-surface-container-lowest">
+<div class="space-y-8">
+<div class="space-y-4">
+<span class="font-label-mono text-primary uppercase text-xs">01 / About</span>
+<h2 class="font-headline-lg text-headline-lg-mobile text-on-surface">The intersection of Logic and Intelligence.</h2>
+</div>
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden glass-card">
+<img class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="A cinematic, high-contrast black and white portrait of a professional AI developer looking thoughtfully to the side. The lighting is dramatic, side-lit with soft blue highlights reflecting off a glass surface in the foreground. The background is a dark, sophisticated tech environment with blurred bokeh circles of electric blue light, conveying a mood of focused intelligence and technical mastery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7AahOTOXDrdWuJEo8e25S1yn2MmiNWCtR1q4XMHwr98LhDJMG6Dgs4twlVRAb6jGCspQendRxjQU_8NPsMyqqogK_B1a28y47l6udmCjaUgIIwa3MUMGjDH40cFsKTcQJmDUgSwczKtyG6WmFF0VuV1a5KTiNPv9PDrvRyTKnA7cngZtfbv1mB6p0j6RciKrp6SkTPJ41w4IhYITq-GxrXzqxx8zvm4oXa8ZlQ9-2_yBa12Z-uX4q"/>
+</div>
+<div class="space-y-6">
+<p class="font-body-md text-on-surface-variant">
+                        I specialize in creating bespoke AI solutions that bridge the gap between complex neural architectures and practical business value. My approach is rooted in technical precision and architectural elegance.
+                    </p>
+<div class="mono-divider"></div>
+<ul class="space-y-4 font-label-mono text-[13px]">
+<li class="flex justify-between items-center">
+<span class="text-on-surface-variant">Based in</span>
+<span>Berlin, Germany</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="text-on-surface-variant">Focus</span>
+<span>Agentic Workflows</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="text-on-surface-variant">Philosophy</span>
+<span>Scale with Intent</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Skills Grid -->
+<section class="py-section-gap-mobile px-margin-mobile">
+<span class="font-label-mono text-primary uppercase text-xs mb-8 block">02 / Capabilities</span>
+<div class="grid grid-cols-1 gap-4">
+<div class="p-6 border border-white/5 bg-white/[0.02] rounded-lg space-y-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">neurology</span>
+<h4 class="font-headline-lg text-[20px]">Machine Learning</h4>
+<p class="text-on-surface-variant text-sm">Deep learning architectures, transformer models, and predictive analytics pipelines.</p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-2 py-1 bg-surface-container text-[10px] font-label-mono border border-white/10">PYTORCH</span>
+<span class="px-2 py-1 bg-surface-container text-[10px] font-label-mono border border-white/10">SCIKIT-LEARN</span>
+</div>
+</div>
+<div class="p-6 border border-white/5 bg-white/[0.02] rounded-lg space-y-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_mode</span>
+<h4 class="font-headline-lg text-[20px]">Workflow Automation</h4>
+<p class="text-on-surface-variant text-sm">Orchestrating complex business logic with autonomous agent swarms and API integration.</p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-2 py-1 bg-surface-container text-[10px] font-label-mono border border-white/10">LANGCHAIN</span>
+<span class="px-2 py-1 bg-surface-container text-[10px] font-label-mono border border-white/10">AUTO-GPT</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="py-section-gap-mobile px-margin-mobile bg-surface-container-lowest">
+<span class="font-label-mono text-primary uppercase text-xs mb-10 block">03 / Experience</span>
+<div class="space-y-12 relative">
+<!-- Vertical Line -->
+<div class="absolute left-[7px] top-2 bottom-0 w-[1px] bg-white/10"></div>
+<div class="relative pl-8 space-y-2">
+<div class="absolute left-0 top-1.5 w-4 h-4 bg-primary rounded-full border-4 border-[#0A0A0A]"></div>
+<span class="font-label-mono text-primary text-[12px]">2022 — PRESENT</span>
+<h4 class="font-headline-lg text-[20px]">Lead AI Architect</h4>
+<p class="text-on-surface-variant font-label-mono text-xs uppercase tracking-wider">Nexus Systems Int.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Pioneered the implementation of multi-modal AI agents for Fortune 500 logistics, reducing operational latency by 40%.</p>
+</div>
+<div class="relative pl-8 space-y-2">
+<div class="absolute left-0 top-1.5 w-4 h-4 bg-surface-variant rounded-full border-4 border-[#0A0A0A]"></div>
+<span class="font-label-mono text-on-surface-variant text-[12px]">2020 — 2022</span>
+<h4 class="font-headline-lg text-[20px]">Automation Engineer</h4>
+<p class="text-on-surface-variant font-label-mono text-xs uppercase tracking-wider">Synthetix Labs</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Developed zero-touch deployment pipelines for high-frequency trading algorithms using advanced ML forecasting.</p>
+</div>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="py-section-gap-mobile px-margin-mobile" id="projects">
+<div class="flex justify-between items-end mb-10">
+<div class="space-y-2">
+<span class="font-label-mono text-primary uppercase text-xs">04 / Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg-mobile">Selected Works.</h2>
+</div>
+<span class="font-label-mono text-[10px] text-on-surface-variant">(04)</span>
+</div>
+<div class="space-y-8">
+<!-- Project 01 -->
+<div class="group relative space-y-4">
+<div class="relative aspect-[16/10] overflow-hidden rounded-xl glass-card">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sleek, high-tech dashboard interface for an AI-powered logistics platform. The screen displays complex real-time data visualizations with glowing electric blue lines connecting global map points. The aesthetic is clean, dark, and futuristic, with blurred code snippets and technical diagrams in the background. High-end product photography style with shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK0x-m7KLY1eiLbfV0BddlHxGUKktcXK_zC3x3oi7dFY9k4IeAHINQyvGSEFDKx0kef9c2m3kJTp9zN-HbyVWCqzPb0YcIOK92ShZCGBZ7gyNLv_1J5fHXR-UFt9SR4u9YFCx_MA1UsF3SLZY1DJuSZuAkRYEHA9jV_ddANzO5bzAEYS8BYahYMYvgyYPqbWnsHLds_RgY78UKNEYz-1U7SdNH3BE1aP8dbd2tcTt2zsjzJRUAMqfp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="px-2 py-1 bg-primary text-on-primary text-[10px] font-label-mono rounded">NLP / AGENTS</span>
+</div>
+</div>
+<div class="space-y-2">
+<h3 class="font-headline-lg text-[22px]">Project: Vector-Flow</h3>
+<p class="text-sm text-on-surface-variant">Self-optimizing supply chain orchestrator driven by custom LLM reasoning chains.</p>
+</div>
+</div>
+<!-- Project 02 -->
+<div class="group relative space-y-4">
+<div class="relative aspect-[16/10] overflow-hidden rounded-xl glass-card">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated visual representation of a neural network being trained on a server rack. Soft teal and electric blue lights pulse through translucent fiber optic cables. The atmosphere is quiet, dark, and powerful, symbolizing the birth of intelligence in a data center. Minimalist and architectural composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6VC-NVcvhoMQD9qD2hW_EodOkdsCKcKmAY-4mBgHhQG7t8MBYmW0wSH5-Zw3tq3DVVIruRJrFuf95H_AynYBT6Yd23qeFqZygH5m6x72XMrWqrTCtS2zh_f5mdssou6S3Bdq1AeH8BVIpgsbXocibulz4-dIdYa9D0f_JajLmOzxStHRm2PbJtGeE2thcT5_ZdWLKyOzFg9OB9d7CPV01yDI7gvt8F-Mwk0YlQXDx245ZU8BjdJbd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="px-2 py-1 bg-primary text-on-primary text-[10px] font-label-mono rounded">CV / EDGE AI</span>
+</div>
+</div>
+<div class="space-y-2">
+<h3 class="font-headline-lg text-[22px]">Vision: Sentinel</h3>
+<p class="text-sm text-on-surface-variant">Real-time anomaly detection system for automated manufacturing lines using computer vision.</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-10 py-4 border border-white/10 font-label-mono text-xs uppercase tracking-[0.2em] hover:bg-white/5 transition-colors">View All Archive</button>
+</section>
+<!-- Interactive Demo Teaser -->
+<section class="py-section-gap-mobile px-margin-mobile">
+<div class="glass-card p-8 rounded-2xl relative overflow-hidden">
+<div class="absolute -top-20 -right-20 w-40 h-40 bg-primary/20 blur-[80px]"></div>
+<div class="relative z-10 space-y-6">
+<span class="font-label-mono text-primary text-xs uppercase">Interactive</span>
+<h3 class="font-headline-lg text-[24px]">Run a Live Simulation.</h3>
+<p class="text-sm text-on-surface-variant">Interact with a lightweight version of my autonomous reasoning agent right here in your browser.</p>
+<div class="p-4 bg-surface-container-lowest border border-white/5 rounded-lg">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-2 h-2 rounded-full bg-red-500/50"></div>
+<div class="w-2 h-2 rounded-full bg-yellow-500/50"></div>
+<div class="w-2 h-2 rounded-full bg-green-500/50"></div>
+<span class="font-label-mono text-[10px] text-on-surface-variant ml-2 uppercase">terminal.sh</span>
+</div>
+<code class="font-label-mono text-[12px] text-primary block leading-relaxed">
+                            $ initialize_agent --mode=autonomous <br/>
+                            &gt; scanning_environment... <br/>
+                            &gt; nexus_link_established <br/>
+                            &gt; waiting_for_input_
+                        </code>
+</div>
+<button class="w-full py-4 bg-white text-black font-label-mono text-[12px] uppercase tracking-widest rounded-lg">Launch Demo</button>
+</div>
+</div>
+</section>
+<!-- Education & Certs -->
+<section class="py-section-gap-mobile px-margin-mobile bg-surface-container-lowest">
+<span class="font-label-mono text-primary uppercase text-xs mb-8 block">05 / Foundations</span>
+<div class="space-y-6">
+<div class="flex justify-between items-start gap-4">
+<div class="space-y-1">
+<h4 class="font-headline-lg text-[18px]">M.Sc. Artificial Intelligence</h4>
+<p class="text-xs text-on-surface-variant font-label-mono uppercase">Tech Institute of Zurich</p>
+</div>
+<span class="font-label-mono text-[10px] text-on-surface-variant shrink-0">2018 - 2020</span>
+</div>
+<div class="mono-divider"></div>
+<div class="flex justify-between items-start gap-4">
+<div class="space-y-1">
+<h4 class="font-headline-lg text-[18px]">B.Tech Computer Science</h4>
+<p class="text-xs text-on-surface-variant font-label-mono uppercase">National Engineering Univ.</p>
+</div>
+<span class="font-label-mono text-[10px] text-on-surface-variant shrink-0">2014 - 2018</span>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap-mobile px-margin-mobile" id="contact">
+<div class="space-y-10">
+<div class="space-y-4">
+<span class="font-label-mono text-primary uppercase text-xs">06 / Contact</span>
+<h2 class="font-display-lg-mobile text-display-lg-mobile">Let's talk <br/>about the <span class="italic">Future.</span></h2>
+</div>
+<form class="space-y-8">
+<div class="space-y-1">
+<label class="font-label-mono text-[10px] uppercase text-on-surface-variant">Your Name</label>
+<input class="w-full bg-transparent border-0 border-b border-white/20 px-0 py-3 focus:ring-0 focus:border-primary placeholder:text-white/10 transition-colors" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-mono text-[10px] uppercase text-on-surface-variant">Inquiry Type</label>
+<select class="w-full bg-transparent border-0 border-b border-white/20 px-0 py-3 focus:ring-0 focus:border-primary appearance-none">
+<option class="bg-surface text-on-surface">Automation Project</option>
+<option class="bg-surface text-on-surface">AI Consulting</option>
+<option class="bg-surface text-on-surface">Collaboration</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-mono text-[10px] uppercase text-on-surface-variant">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-white/20 px-0 py-3 focus:ring-0 focus:border-primary placeholder:text-white/10 transition-colors" placeholder="Tell me about your vision..." rows="3"></textarea>
+</div>
+<button class="w-full py-5 bg-[#007AFF] text-white font-label-mono text-sm uppercase tracking-[0.2em] rounded-lg shadow-xl electric-glow">Transmit Message</button>
+</form>
+<div class="flex flex-col gap-6 pt-10">
+<a class="flex items-center gap-4 group" href="mailto:hello@shivampiple.ai">
+<span class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-[18px]">alternate_email</span>
+</span>
+<span class="font-label-mono text-sm">hello@shivampiple.ai</span>
+</a>
+<a class="flex items-center gap-4 group" href="#">
+<span class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</span>
+<span class="font-label-mono text-sm">Berlin, Germany</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-section-gap-mobile bg-surface border-t border-white/10 px-margin-mobile">
+<div class="flex flex-col gap-12">
+<div class="space-y-6">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">S.P.</span>
+<p class="font-body-md text-on-surface-variant text-sm max-w-[280px]">Architecting the neural substrate of tomorrow's industrial landscape.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<span class="font-label-mono text-[10px] uppercase text-on-surface-variant">Connect</span>
+<nav class="flex flex-col gap-3 font-label-mono text-sm">
+<a class="text-on-surface hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Twitter (X)</a>
+</nav>
+</div>
+<div class="space-y-4">
+<span class="font-label-mono text-[10px] uppercase text-on-surface-variant">Resources</span>
+<nav class="flex flex-col gap-3 font-label-mono text-sm">
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Resume</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Papers</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Press Kit</a>
+</nav>
+</div>
+</div>
+<div class="flex flex-col gap-4 items-start pt-8 border-t border-white/5">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">© 2024 Shivam Piple. Built with AI.</span>
+<div class="flex gap-4">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<span class="font-label-mono text-[10px] uppercase">All Systems Nominal</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Interactive Atmosphere Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Subtle parallax for the hero content
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const heroText = document.querySelector('h1');
+                if (heroText) {
+                    heroText.style.transform = `translateY(${scrolled * 0.1}px)`;
+                }
+            });
+
+            // Smooth reveal for glass cards
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100');
+                        entry.target.classList.add('translate-y-0');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.glass-card').forEach(card => {
+                card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-1000', 'ease-out');
+                observer.observe(card);
+            });
+        });
+    </script>
+</body></html>

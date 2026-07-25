@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-color: #007AFF;
+  --accent-rgb: 0, 122, 255;
+}
+
+@layer base {
+  body {
+    background-color: #0A0A0A;
+    color: #e5e2e1;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Smooth 300ms transition for color property changes */
+  a, button, span, div, h1, h2, h3, h4, p, input, textarea, select, svg, path {
+    transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease, box-shadow 300ms ease, text-shadow 300ms ease;
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-surface,
+.glass-card {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-surface:hover,
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Accent Classes linked to CSS Custom Property */
+.text-accent,
+.text-primary {
+  color: var(--accent-color) !important;
+}
+
+.bg-accent,
+.bg-primary {
+  background-color: var(--accent-color) !important;
+}
+
+.border-accent,
+.border-primary {
+  border-color: var(--accent-color) !important;
+}
+
+/* Custom Text and Box Glows */
+.text-glow {
+  text-shadow: 0 0 15px rgba(var(--accent-rgb), 0.5) !important;
+}
+
+.electric-glow {
+  box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.4) !important;
+}
+
+.electric-glow:hover {
+  box-shadow: 0 0 30px rgba(var(--accent-rgb), 0.6) !important;
+}
+
+/* Typing Cursor Effect */
+.typing-cursor::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: var(--accent-color);
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Visual Motifs */
+.mono-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.node-connector {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+/* Custom Material Symbols override */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #414755;
+}

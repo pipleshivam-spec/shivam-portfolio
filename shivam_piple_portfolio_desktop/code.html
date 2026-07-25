@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shivam Piple | AI &amp; Automation Specialist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#004493",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-highest": "#353534",
+                        "primary-container": "#4b8eff",
+                        "primary": "#adc6ff",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary": "#2f3131",
+                        "on-surface": "#e5e2e1",
+                        "on-error": "#690005",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-secondary": "#313030",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-tint": "#adc6ff",
+                        "primary-fixed": "#d8e2ff",
+                        "on-primary": "#002e69",
+                        "inverse-primary": "#005bc1",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary-container": "#909191",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#c1c6d7",
+                        "outline": "#8b90a0",
+                        "on-tertiary-container": "#282a2a",
+                        "on-secondary-fixed-variant": "#474646",
+                        "error": "#ffb4ab",
+                        "secondary": "#c8c6c5",
+                        "surface": "#131313",
+                        "on-secondary-container": "#bab8b7",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-dim": "#131313",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-container": "#201f1f",
+                        "on-primary-fixed": "#001a41",
+                        "tertiary": "#c6c6c7",
+                        "inverse-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "on-background": "#e5e2e1",
+                        "outline-variant": "#414755",
+                        "on-primary-container": "#00285c",
+                        "surface-variant": "#353534",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "surface-bright": "#3a3939",
+                        "secondary-container": "#4a4949",
+                        "background": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "64px",
+                        "section-gap-desktop": "120px",
+                        "unit": "8px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "display-lg-mobile": ["Space Grotesk"],
+                        "label-mono": ["Geist Mono"],
+                        "display-lg": ["Space Grotesk"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-mono": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .glass-surface {
+            background: rgba(18, 18, 18, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-surface:hover {
+            border-top-color: rgba(255, 255, 255, 0.3);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(0, 122, 255, 0.4);
+        }
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+        .node-connector {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="font-body-md selection:bg-primary selection:text-on-primary">
+<!-- Global Background Shader -->
+<!-- STITCH_SHADER_START:ANIMATION_2 class="fixed inset-0 w-full h-full opacity-30 z-0 pointer-events-none" -->
+<div class="fixed inset-0 w-full h-full opacity-30 z-0 pointer-events-none" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_2" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_2');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+float hash(vec2 p) {
+    p = fract(p * vec2(123.34, 456.21));
+    p += dot(p, p + 45.32);
+    return fract(p.x * p.y);
+}
+
+float line(vec2 p, vec2 a, vec2 b) {
+    vec2 pa = p - a;
+    vec2 ba = b - a;
+    float h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0);
+    return length(pa - ba * h);
+}
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 p = (uv - 0.5) * 2.0;
+    p.x *= u_resolution.x / u_resolution.y;
+    
+    // Background color (Deep Charcoal)
+    vec3 color = vec3(0.04, 0.04, 0.05);
+    
+    // Grid system
+    float gridSize = 8.0;
+    vec2 g_uv = uv * gridSize;
+    vec2 id = floor(g_uv);
+    vec2 f_uv = fract(g_uv) - 0.5;
+    
+    // Nodes and connections
+    for(float y = -1.0; y <= 1.0; y++) {
+        for(float x = -1.0; x <= 1.0; x++) {
+            vec2 offs = vec2(x, y);
+            vec2 currentId = id + offs;
+            
+            // Random movement for nodes
+            float n = hash(currentId);
+            vec2 pos = offs + vec2(sin(u_time * 0.5 + n * 6.28), cos(u_time * 0.5 + n * 6.28)) * 0.3;
+            
+            // Draw points
+            float dist = length(f_uv - pos);
+            float point = smoothstep(0.03, 0.02, dist);
+            color += point * vec3(0.0, 0.48, 1.0) * 0.5; // Accent Blue
+            
+            // Draw connections to neighbors
+            if(n > 0.5) {
+                vec2 neighborId = currentId + vec2(1.0, 0.0);
+                float n2 = hash(neighborId);
+                vec2 pos2 = vec2(1.0, 0.0) + vec2(sin(u_time * 0.5 + n2 * 6.28), cos(u_time * 0.5 + n2 * 6.28)) * 0.3;
+                float l = line(f_uv, pos, pos2);
+                color += smoothstep(0.015, 0.0, l) * vec3(0.0, 0.48, 1.0) * 0.1 * (0.5 + 0.5 * sin(u_time + n * 10.0));
+            }
+        }
+    }
+    
+    // Subtle vignette
+    color *= 1.0 - length(p) * 0.3;
+    
+    gl_FragColor = vec4(color, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_2 -->
+<!-- Navigation Header -->
+<header class="fixed top-0 w-full bg-surface/70 backdrop-blur-md border-b border-white/10 z-50">
+<nav class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface">S.P.</div>
+<div class="hidden md:flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#experience">Experience</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#contact">Contact</a>
+</div>
+<div class="flex gap-4 items-center">
+<a class="hidden md:block px-6 py-2 border border-white/20 text-on-surface rounded-lg hover:bg-white/5 transition-all font-body-md" href="#">Resume</a>
+<a class="px-6 py-2 bg-[#007AFF] text-white rounded-lg font-bold active:scale-95 transition-transform font-body-md" href="#contact">Hire Me</a>
+</div>
+</nav>
+</header>
+<main class="relative z-10 pt-20">
+<!-- Hero Section -->
+<section class="min-h-[90vh] flex flex-col justify-center items-start px-gutter max-w-container-max mx-auto py-section-gap-desktop">
+<div class="max-w-3xl">
+<span class="font-label-mono text-label-mono text-primary mb-4 block uppercase tracking-widest">Automation Architect</span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">
+                    Shivam Piple
+                </h1>
+<div class="h-16 mb-8">
+<span class="font-headline-xl text-headline-xl text-on-surface-variant typing-cursor" id="role-text"></span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed">
+                    Transforming repetitive business processes into intelligent, automated workflows through AI, RPA, and low-code excellence.
+                </p>
+<div class="flex flex-wrap gap-6 mb-16">
+<a class="px-8 py-4 bg-[#007AFF] text-white font-bold rounded-lg flex items-center gap-2 hover:shadow-[0_0_20px_rgba(0,122,255,0.4)] transition-all" href="#projects">
+                        View Projects <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="px-8 py-4 glass-surface text-on-surface font-bold rounded-lg flex items-center gap-2" href="#">
+                        Download Resume <span class="material-symbols-outlined">download</span>
+</a>
+</div>
+<div class="flex gap-6 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-3xl">mail</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-mono text-label-mono" href="#">GITHUB</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-mono text-label-mono" href="#">PUNE, IN</a>
+</div>
+</div>
+</section>
+<!-- Metrics Strip -->
+<section class="max-w-container-max mx-auto px-gutter mb-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="glass-surface p-8 flex flex-col items-center text-center">
+<div class="font-display-lg-mobile text-primary font-bold mb-2 counter" data-target="17">0</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Workflows Delivered</div>
+</div>
+<div class="glass-surface p-8 flex flex-col items-center text-center">
+<div class="font-display-lg-mobile text-primary font-bold mb-2 counter" data-target="92">0</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Extraction Accuracy %</div>
+</div>
+<div class="glass-surface p-8 flex flex-col items-center text-center">
+<div class="font-display-lg-mobile text-primary font-bold mb-2 counter" data-target="60">0</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Faster Approvals %</div>
+</div>
+<div class="glass-surface p-8 flex flex-col items-center text-center">
+<div class="font-display-lg-mobile text-primary font-bold mb-2 counter" data-target="4">0</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Hours Saved Daily</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-square glass-surface rounded-lg overflow-hidden relative z-10 group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional studio portrait of a young South Asian male professional, Shivam Piple, with a smart, focused expression. The lighting is dramatic and low-key with a subtle electric blue rim light, matching a high-tech dark mode aesthetic. The background is dark and out of focus with subtle digital bokeh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2EqaXjwjXTbEkD1Cgz7-CqPdilsGgr20xEGxTEXi2f8xl3p5Xji0Ck_03gAWPCQgZC2RPDa73OS2wEkqalDaTOb4gMao6wAxw9btKX52bLUe4zCbCIcCvaORDM0wq9z-Xym0TynNiNd1f9aj1gEE0K0W3IlUfQ6gJpekkirFjgJsnnsKykk4bxX1t_PH7Zr-T5GAwL0gXA8dfeozEujfpyqo6t0Y1mbgDLGFjAfKGg_NpgOvRJ0fV"/>
+</div>
+<div class="absolute -top-10 -left-10 w-full h-full border border-white/5 -z-0"></div>
+<div class="absolute -bottom-6 -right-6 glass-surface p-6 z-20">
+<div class="font-label-mono text-label-mono text-primary mb-2">GPA 7.44</div>
+<div class="font-headline-lg text-headline-lg">MCA Candidate</div>
+</div>
+</div>
+<div>
+<h2 class="font-headline-xl text-headline-xl mb-8">Engineering Efficiency</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                    I specialize in bridging the gap between manual complexity and digital precision. My work focuses on building resilient RPA systems and AI-integrated applications that handle the "boring stuff" so humans can focus on strategy.
+                </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 glass-surface">
+<span class="material-symbols-outlined text-primary">school</span>
+<div>
+<p class="font-bold">Master of Computer Applications</p>
+<p class="text-on-surface-variant text-sm">Focused on Distributed Systems &amp; AI</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 glass-surface">
+<span class="material-symbols-outlined text-primary">verified</span>
+<div>
+<p class="font-bold">Certified RPA Developer</p>
+<p class="text-on-surface-variant text-sm">Specialist in UI Path &amp; Power Automate</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Grid -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop">
+<h2 class="font-headline-xl text-headline-xl mb-16 text-center">Tech Stack</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Skill Category -->
+<div class="glass-surface p-8 space-y-6">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined">bolt</span>
+<h3 class="font-headline-lg text-headline-lg">Power Platform</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">PowerApps</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">Automate</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">BI</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">Dataverse</span>
+</div>
+</div>
+<!-- Skill Category -->
+<div class="glass-surface p-8 space-y-6">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined">psychology</span>
+<h3 class="font-headline-lg text-headline-lg">AI &amp; Automation</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">OpenAI API</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">RPA (UiPath)</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">LLMs</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">Python</span>
+</div>
+</div>
+<!-- Skill Category -->
+<div class="glass-surface p-8 space-y-6">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined">code</span>
+<h3 class="font-headline-lg text-headline-lg">Backend &amp; API</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">Node.js</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">FastAPI</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">MongoDB</span>
+<span class="px-3 py-1 bg-surface-container-highest font-label-mono text-label-mono border border-white/5">SQL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop" id="experience">
+<h2 class="font-headline-xl text-headline-xl mb-16">Work History</h2>
+<div class="relative space-y-12">
+<!-- Timeline Line -->
+<div class="absolute left-8 top-0 bottom-0 w-px bg-white/10 hidden md:block"></div>
+<div class="relative md:pl-24 group">
+<div class="absolute left-7 top-1 w-2 h-2 rounded-full bg-primary ring-8 ring-primary/20 hidden md:block group-hover:scale-150 transition-transform"></div>
+<div class="glass-surface p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
+<h3 class="font-headline-lg text-headline-lg">Power Platform &amp; RPA Developer Intern</h3>
+<span class="font-label-mono text-label-mono text-primary bg-primary/10 px-4 py-1">RPA UNICORN</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-4">Developed end-to-end automation solutions using Power Platform and UiPath. Architected database structures in Dataverse and optimized legacy Excel workflows by 40%.</p>
+<div class="flex gap-4 text-sm text-on-surface-variant opacity-70">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Remote / Hybrid</span>
+</div>
+</div>
+</div>
+<div class="relative md:pl-24 group">
+<div class="absolute left-7 top-1 w-2 h-2 rounded-full bg-primary ring-8 ring-primary/20 hidden md:block group-hover:scale-150 transition-transform"></div>
+<div class="glass-surface p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
+<h3 class="font-headline-lg text-headline-lg">Customer Support Executive</h3>
+<span class="font-label-mono text-label-mono text-primary bg-primary/10 px-4 py-1">CONCENTRIX IMPERIA</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-4">Handled high-volume client interactions, maintaining a 98% CSAT score. Identified repetitive ticket types which later sparked my interest in workflow automation.</p>
+<div class="flex gap-4 text-sm text-on-surface-variant opacity-70">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 2022 - 2023</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop" id="projects">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-xl text-headline-xl">Selected Projects</h2>
+<p class="font-label-mono text-label-mono text-on-surface-variant">04 CASE STUDIES</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="glass-surface group overflow-hidden">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A futuristic e-commerce dashboard UI design for a premium clothing brand called MAISON. The interface is clean, dark, and elegant with refined typography and high-fashion product shots. Subtle UI elements show inventory tracking and customer flow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFMOLTKnKYfoqJ8tNFgAz9ZCrTEPlnoHcGhMTzBrFeQZp5Y4iFk9h8CD0MevIN0juawmZeSP6CwZ_WAxSHMgVZFE4X_uUYxgaktNTFl56JUpns9TZ3pA5np3F6pfO49u58yrR5_KLtsVLTiFhkhQ08MikbIQwqYjMeJFSxQDhm0xwBj8XSKxfSZE7IWAHmqCnpF0aL9QuyDsw3IizSEMwG-Zfg2lKrmc9x-P679OhCe44zjQUxDQ0q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+<div class="absolute bottom-4 left-6">
+<span class="font-label-mono text-label-mono bg-primary text-on-primary px-3 py-1">FULL-STACK</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-lg text-headline-lg mb-2">MAISON</h3>
+<p class="text-on-surface-variant mb-6 h-12 line-clamp-2">Premium e-commerce experience with headless CMS integration and hyper-optimized checkout flow.</p>
+<div class="flex justify-between items-center">
+<div class="flex gap-2">
+<span class="text-xs font-label-mono text-on-surface-variant border border-white/10 px-2 py-1">REACT</span>
+<span class="text-xs font-label-mono text-on-surface-variant border border-white/10 px-2 py-1">NODE.JS</span>
+</div>
+<a class="text-primary hover:underline flex items-center gap-1" href="#">Details <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="glass-surface group overflow-hidden">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An Android mobile application interface showing real-time cricket scores. The design is minimalist with a focus on fast-loading data and clean data visualization for live match statistics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEnJWEJVoWu9EGArvSJMccQfxZVLyYr1j80BOtL9utLEm2_k1sCBBOUV1USFMSkUdX6wgtQdX9tYspCK1MKTVGx5kvYV-cMZrmb1NNAGGtil2sR7x58yPWu4Aq-t9ikJtKXLgJOapkyJCLETN4AwOmdf07NoOXPEnh6Zly_V33p06moMZu8bFQsmS64al-oLbjZYIBtdVZeb9G64QzKQ6InXFK2uXVe7NB0mz-DmldZDzn4icvd6e"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+<div class="absolute bottom-4 left-6">
+<span class="font-label-mono text-label-mono bg-primary text-on-primary px-3 py-1">MOBILE</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-lg text-headline-lg mb-2">LazyCricScore</h3>
+<p class="text-on-surface-variant mb-6 h-12 line-clamp-2">Real-time cricket update engine designed for low-bandwidth environments and instant notifications.</p>
+<div class="flex justify-between items-center">
+<div class="flex gap-2">
+<span class="text-xs font-label-mono text-on-surface-variant border border-white/10 px-2 py-1">JAVA</span>
+<span class="text-xs font-label-mono text-on-surface-variant border border-white/10 px-2 py-1">FIREBASE</span>
+</div>
+<a class="text-primary hover:underline flex items-center gap-1" href="#">Details <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="glass-surface group overflow-hidden md:col-span-2">
+<div class="grid md:grid-cols-2">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A technical visualization of an AI agent scanning through job boards. The screen shows a terminal-like window with scrolling logs of job parsing, data extraction, and ranking algorithms in an electric blue and dark theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1iDs6cWXJTQCdRxV7FeRfKO4AtC23f9GoVezUYTo9cV3G9UbvjvSr4QpH8uejmEujnbQgr-DMugLEOnMmT0BWUtr0f8J8w6YlTKvTB1sY5h_VXjOwAl-Z23E2lnV8o7QGX0juy28pPDgGP90tAaQeF_bQR_luMGI_wqsvwgP7LKALV4GRUhSRAT1a-Ijuwd6yTLoY_rFh0Atah2VRpS2BaWPL9nBryerEfbxG-5QssL6qqlPHqAkh"/>
+</div>
+<div class="p-12 flex flex-col justify-center">
+<span class="font-label-mono text-label-mono text-primary mb-2">92% ACCURACY</span>
+<h3 class="font-headline-lg text-headline-lg mb-4">Job Search Automation Agent</h3>
+<p class="text-on-surface-variant mb-8">Autonomous Python agent that scrapes LinkedIn/Indeed, parses descriptions via GPT-4, and generates personalized cover letters automatically.</p>
+<div class="flex gap-4">
+<span class="px-4 py-2 border border-white/10 font-label-mono text-sm">GPT-4</span>
+<span class="px-4 py-2 border border-white/10 font-label-mono text-sm">SELENIUM</span>
+<span class="px-4 py-2 border border-white/10 font-label-mono text-sm">PANDAS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Demo Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop">
+<div class="glass-surface p-12 relative overflow-hidden">
+<div class="max-w-2xl mx-auto text-center mb-12">
+<h2 class="font-headline-xl text-headline-xl mb-4">AI Matching Engine</h2>
+<p class="text-on-surface-variant">Experience a simplified version of my JobFit AI parsing logic below.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<textarea class="w-full h-48 bg-black/40 border border-white/10 rounded-lg p-6 focus:border-primary focus:ring-0 text-sm font-label-mono resize-none" placeholder="Paste job description here..."></textarea>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:scale-[1.02] active:scale-95 transition-all" onclick="startSimulation(this)">
+                            Analyze Fit
+                        </button>
+</div>
+<div class="glass-surface p-8 min-h-[300px] flex flex-col justify-center items-center relative">
+<div class="space-y-8 w-full" id="sim-status">
+<div class="text-center">
+<span class="material-symbols-outlined text-6xl text-white/10">upload_file</span>
+<p class="text-on-surface-variant mt-4 font-label-mono">Waiting for input...</p>
+</div>
+</div>
+<!-- Result View (Hidden initially) -->
+<div class="hidden w-full text-center space-y-6" id="sim-result">
+<div class="inline-block p-8 rounded-full border-4 border-primary text-primary font-display-lg-mobile">87%</div>
+<h4 class="font-headline-lg text-headline-lg">Matched: Senior Automation Eng.</h4>
+<div class="flex justify-center gap-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-label-mono">Keywords Extracted</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop">
+<h2 class="font-headline-xl text-headline-xl mb-12">Education</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="glass-surface p-8 flex gap-6 items-start">
+<div class="p-4 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<div>
+<h4 class="font-headline-lg text-headline-lg mb-1">MCA</h4>
+<p class="text-on-surface-variant font-label-mono text-sm mb-4">Savitribai Phule Pune University</p>
+<p class="text-primary font-bold">CGPA: 7.44</p>
+</div>
+</div>
+<div class="glass-surface p-8 flex gap-6 items-start">
+<div class="p-4 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">history_edu</span>
+</div>
+<div>
+<h4 class="font-headline-lg text-headline-lg mb-1">BCA</h4>
+<p class="text-on-surface-variant font-label-mono text-sm mb-4">Pune University Affiliated College</p>
+<p class="text-on-surface-variant">Foundational Computer Science</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop" id="contact">
+<div class="glass-surface p-12 md:p-20 grid md:grid-cols-2 gap-20">
+<div>
+<h2 class="font-display-lg text-display-lg mb-8">Let's Automate.</h2>
+<p class="text-on-surface-variant text-body-lg mb-12">Looking for an engineer to streamline your backend or build custom AI agents? Let's connect.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">alternate_email</span>
+<span class="font-body-md">shivam.piple@example.com</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-body-md">Pune, Maharashtra, India</span>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono uppercase opacity-50">Full Name</label>
+<input class="w-full bg-white/5 border border-white/10 p-4 rounded-lg focus:border-primary focus:ring-0" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono uppercase opacity-50">Email Address</label>
+<input class="w-full bg-white/5 border border-white/10 p-4 rounded-lg focus:border-primary focus:ring-0" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono uppercase opacity-50">Project Detail</label>
+<textarea class="w-full bg-white/5 border border-white/10 p-4 rounded-lg focus:border-primary focus:ring-0" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-[#007AFF] text-white font-bold rounded-lg hover:shadow-[0_0_20px_rgba(0,122,255,0.4)] transition-all">
+                        Send Message
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/10 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto py-12 gap-8">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold">S.P.</div>
+<div class="flex gap-8">
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-colors" href="#">Email</a>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface-variant">© 2024 Shivam Piple. Built with AI.</p>
+</div>
+</footer>
+<script>
+        // Typing Effect
+        const roles = [
+            "Automation Engineer",
+            "RPA Developer",
+            "Power Platform Developer",
+            "AI Automation Specialist"
+        ];
+        let roleIndex = 0;
+        let charIndex = 0;
+        const textElement = document.getElementById("role-text");
+
+        function type() {
+            if (charIndex < roles[roleIndex].length) {
+                textElement.textContent += roles[roleIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100);
+            } else {
+                setTimeout(erase, 2000);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                textElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50);
+            } else {
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(type, 500);
+            }
+        }
+        type();
+
+        // Counters
+        const counters = document.querySelectorAll('.counter');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    let count = 0;
+                    const duration = 2000;
+                    const increment = target / (duration / 16);
+                    
+                    const updateCount = () => {
+                        count += increment;
+                        if (count < target) {
+                            entry.target.innerText = Math.ceil(count);
+                            requestAnimationFrame(updateCount);
+                        } else {
+                            entry.target.innerText = target;
+                        }
+                    };
+                    updateCount();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => observer.observe(counter));
+
+        // Demo Simulation
+        function startSimulation(btn) {
+            const statusBox = document.getElementById('sim-status');
+            const resultBox = document.getElementById('sim-result');
+            
+            btn.disabled = true;
+            btn.classList.add('opacity-50');
+            
+            statusBox.innerHTML = `
+                <div class="flex flex-col items-center gap-4">
+                    <div class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+                    <p class="font-label-mono animate-pulse">Parsing Entities...</p>
+                </div>
+            `;
+
+            setTimeout(() => {
+                statusBox.innerHTML = `
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+                        <p class="font-label-mono animate-pulse">Matching Skills to Vectors...</p>
+                    </div>
+                `;
+            }, 1500);
+
+            setTimeout(() => {
+                statusBox.classList.add('hidden');
+                resultBox.classList.remove('hidden');
+                btn.classList.add('hidden');
+            }, 3500);
+        }
+    </script>
+</body></html>
